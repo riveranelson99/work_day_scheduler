@@ -4,27 +4,23 @@ Importing the necessary resources in order to make a work scheduler function pro
 
 # pseudo code
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+* Create a calender that enables a user to save text data in hour intervals
+* The calender is to display the CURRENT day's date at the top of the page
+* The user is to be presented with time blocks/slots for each WORK HOUR interval ("Average" 9 to 5)
+* Each time block/slot is to be color coordinated according to past/present/future
+* User will be allowed to enter text data into a block/slot that will be saved in local data
+* Each time block/slot will be situated with a save button that will responsible for actually storing the entered data into local storage
+* The data must persist through page reload
 
+# screenshot
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+![Generator Example](Assets/images/port-5-screenshot.png)
 
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+# link
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+https://riveranelson99.github.io/work_day_scheduler/
 
-Uses a date utility library to work with date and time
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
