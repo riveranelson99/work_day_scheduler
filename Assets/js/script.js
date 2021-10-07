@@ -1,9 +1,11 @@
 // Establish method here that loads current days date upon page load
-// Date format should follow that of the example image provided
+// Date format should follow that of the example image provided (Day, month, date)
 var $today = moment().format("dddd, MMMM Do");
 $("#currentDay").text($today);
 
 // Establish function that checks for current time (specifically in hours) and color codes each sections accordingly
+// Accomplish by establishing two variables, one that checks the current time (specifically current hour) and another variable that checks the description section for unique ids
+// Establish conditional statement to set the description section color according to the current hour of the day
 function thisMoment() {
     var $currentMoment = moment().format("H");
 
@@ -19,7 +21,7 @@ function thisMoment() {
     })
 }
 
-// Establish function that allows user to save their marked down plan for whatever specific time slot
+// Establish function that allows user to save their marked down plan for whatever specific time slot description section
 function $savePlan (event) {
     var $plan = $(event.target).siblings(".description").val();
     var $time = $(event.target).siblings(".description").attr("id");
